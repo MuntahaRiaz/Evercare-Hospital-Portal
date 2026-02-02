@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Evercare Hospital</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  
+    <header>
+    <div class="logo">
+      <i class="fa fa-hospital"></i> EVERCARE HOSPITAL
+    </div>
+  </header>
+
+  
+  <section class="hero-slider">
+
+    <div class="slides">
+      <img src="national-cancer-institute-cP6Z_VKMCuo-unsplash.jpg">
+      <div class="slide-text">
+        <h1>We Provide The Best Treatment</h1>
+        <p>Certified Doctors & Modern Labs, Open 24/7</p>
+      </div>
+    </div>
+
+    <div class="slides">
+      <img src="miguel-ausejo-vsSu0oGtLoI-unsplash.jpg">
+      <div class="slide-text">
+        <h1>Advanced Diagnostics</h1>
+        <p>Accurate reports & modern equipment</p>
+      </div>
+    </div>
+
+    <div class="slides">
+      <img src="adhy-savala-zbpgmGe27p8-unsplash.jpg">
+      <div class="slide-text">
+        <h1>Compassionate Doctors</h1>
+        <p>Your health is our priority</p>
+      </div>
+    </div>
+
+  </section>
+
+  
+  <section class="service-buttons">
+    <button onclick="openServicePopup('Consultation')">
+      <i class="fa fa-stethoscope"></i> Consultation
+    </button>
+    <button onclick="openServicePopup('Lab')">
+      <i class="fa fa-vials"></i> Lab Tests
+    </button>
+    <button onclick="openServicePopup('Emergency')">
+      <i class="fa fa-ambulance"></i> Emergency
+    </button>
+  </section>
+
+  
+  <section class="services">
+    <h2>Hospital Services</h2>
+    <div class="service-cards">
+      <div class="card">
+        <i class="fa fa-user-md"></i>
+        <h3>Expert Doctors</h3>
+        <p>Highly qualified consultants in all major departments.</p>
+      </div>
+      <div class="card">
+        <i class="fa fa-microscope"></i>
+        <h3>Modern Labs</h3>
+        <p>Accurate testing with fast reporting system.</p>
+      </div>
+      <div class="card">
+        <i class="fa fa-heartbeat"></i>
+        <h3>Emergency Care</h3>
+        <p>24/7 emergency & trauma services available.</p>
+      </div>
+      <div class="card">
+        <i class="fa fa-ambulance"></i>
+        <h3>Ambulance</h3>
+        <p>Rapid response ambulance services.</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <div id="servicePopup" class="popup">
+    <div class="popup-box">
+      <span id="closePopup">&times;</span>
+      <h2 id="popupTitle"></h2>
+      <div id="popupContent"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
